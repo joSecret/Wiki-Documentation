@@ -1,0 +1,19 @@
+// Color system
+$blue:    #1890ff;
+
+// Prefix for :root CSS variables
+$variable-prefix:             bs-;
+
+// Typography
+$font-family-sans-serif-heading: 'Fira+Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base-heading:    var(--#{$variable-prefix}font-sans-serif-heading);
+
+$font-size-root:              null !default;
+$font-size-base:              0.875rem; // 14px
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+// Navbar
+$navbar-padding-y:            0;
+
+@import "../../node_modules/bootstrap/scss/variables";

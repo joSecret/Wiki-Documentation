@@ -1,8 +1,10 @@
+import PageHeaderSidebar from './components/layouts/headerSidebar/Page'
+
 function App() {
   return (
-    <div className="App">
-      <h1>First</h1>
-    </div>
+    <>
+      <PageHeaderSidebar />
+    </>
   );
 }
 
