@@ -1,7 +1,18 @@
 @import "../../../scss/import";
 
 .page-header-sidebar {
-  .region-user {
-    margin-left: $navbar-brand-margin-end;
-  }
+  min-height: 100vh;
+}
+
+.region-user {
+  margin-left: $navbar-brand-margin-end;
+}
+
+.sidebar {
+  min-width: 180px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main-content {
+  padding: $grid-gutter-width;
 }

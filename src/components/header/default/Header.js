@@ -1,19 +1,13 @@
-import { Link } from 'react-router-dom'
 import PropsTypes from 'prop-types'
-import Region from '../../regions/Region'
-
-import logo from '../../../img/logo.svg'
-import regionUser from '../../../img/temp/region-user.svg'
+import RSearch from '../../../content/regions/search'
+import RUser from '../../../content/regions/user'
+import RBranding from '../../../content/regions/branding'
 
 const Header = ({ title }) => {
   return (
     <header className='navbar navbar-expand-lg navbar-dark bg-dark'>
       <div className="container-fluid">
-        <Region id='branding'>
-          <Link className="navbar-brand" to="/">
-            <img src={ logo } alt="logo" />
-          </Link>
-        </Region>
+        <RBranding />
 
         <button
           className="navbar-toggler"
@@ -28,16 +22,8 @@ const Header = ({ title }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarMain">
-          <Region id='search' classes="ms-auto me-auto">
-            <form className="input-group">
-              <input className="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-primary" type="submit">Search</button>
-            </form>
-          </Region>
-
-          <Region id='user'>
-            <img src={ regionUser } alt="logo" />
-          </Region>
+          <RSearch />
+          <RUser />
         </div>
       </div>
     </header>

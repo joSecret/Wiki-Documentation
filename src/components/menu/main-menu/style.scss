@@ -1,0 +1,13 @@
+@import "../../../scss/import";
+
+.nav-main {
+  line-height: 1.571em;
+
+  svg {
+    margin-right: .5em;
+  }
+
+  .active {
+    border-right: 3px solid $primary;
+  }
+}

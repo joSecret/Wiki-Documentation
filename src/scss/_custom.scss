@@ -1,12 +1,55 @@
 // Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e5e5e5;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
 $blue:    #1890ff;
 
+$primary:       $blue !default;
+
 // Prefix for :root CSS variables
-$variable-prefix:             bs-;
+$variable-prefix:             wiki-;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// Body
+$body-bg:                   $gray-200;
+$body-color:                $gray-900 !default;
+$body-text-align:           null !default;
+
+// Links
+$link-color:                              $primary !default;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   null !default;
+
+$border-radius:               .25rem !default;
+$border-radius-sm:            .125rem;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
 
 // Typography
-$font-family-sans-serif-heading: 'Fira+Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base-heading:    var(--#{$variable-prefix}font-sans-serif-heading);
+$font-family-sans-serif:          'Roboto', system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $font-size-root:              null !default;
 $font-size-base:              0.875rem; // 14px
@@ -15,5 +58,34 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 
 // Navbar
 $navbar-padding-y:            0;
+
+// Navs
+$nav-link-padding-y:                0.563rem;
+$nav-link-padding-x:                1rem;
+$nav-link-font-size:                null !default;
+$nav-link-font-weight:              null !default;
+$nav-link-color:                    $black;
+$nav-link-hover-color:              $primary;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-width:             0 5px 0 0;
+$nav-tabs-border-radius:            null;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-bg:           #E6F7FF;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+$nav-pills-border-radius:           0;
+$nav-pills-link-active-color:       $primary;
+$nav-pills-link-active-bg:          #E6F7FF;
+
+// Cards
+$card-spacer-y:                     $spacer * 1.5;
+$card-spacer-x:                     $spacer * 1.5;
+$card-title-spacer-y:               $spacer / 2 !default;
+$card-border-width:                 0;
+$card-border-radius:                $border-radius-sm;
 
 @import "../../node_modules/bootstrap/scss/variables";
